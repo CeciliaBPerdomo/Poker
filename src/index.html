@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- Boton -->
+        <div class="botonCarta  d-grid gap-2 col-6 mx-auto" id="boton">
+            <button type="button" class="btn btn-outline-dark">Nueva carta</button>
+        </div>
+
+        <div class="d-flex justify-content-center" id="cartaTamano">
+            <div class="card fs-1" id="carta" name="carta" style="width:22rem; height: 40rem;">
+                <!-- Palo -->
+                <div class="card-body">
+                    <p class="card-text text-start" id="palo-izq"></p>
+                </div>
+
+                <!-- Numero -->
+                <div>
+                    <p class="card-text text-center" id="numerocard"></p>
+                </div>
+
+                <!-- Palo -->
+                <div class=" card-body">
+                    <p class="card-text text-end" id="palo-der"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="formulario d-flex justify-content-center" id="formulario">
+        <div class="row g-3 align-items-center">
+          <!-- Ancho 
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Ancho:</label>
+          </div>
+
+          <div class="col-auto">
+            <input
+              type="number"
+              id="ancho"
+              class="form-control"
+              aria-describedby="passwordHelpInline"
+            />
+          </div>
+
+          <!-- Alto 
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Alto:</label>
+          </div>
+          <div class="col-auto">
+            <input
+              type="number"
+              id="alto"
+              class="form-control"
+              aria-describedby="passwordHelpInline"
+            />
+          </div>
+
+          <div class="botonCarta  d-grid gap-2 col-6 mx-auto" id="boton">
+            <button type="button" class="btn btn-outline-dark" id="tamano">
+              Cambiar tamaño carta
+            </button>
+          </div> -->
     </div>
-  </body>
+    </div>
+    </div>
+</body>
+
 </html>
